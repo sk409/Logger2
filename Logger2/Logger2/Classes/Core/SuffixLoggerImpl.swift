@@ -1,5 +1,11 @@
+import Foundation
 
-open class SuffixLoggerImpl: SuffixLogger {
+open class SuffixLoggerImpl: NSObject, SuffixLogger {
+    
+    override public init() {
+        super.init()
+    }
+    
     public func suffix() -> String {
         return "_TEST"
     }
